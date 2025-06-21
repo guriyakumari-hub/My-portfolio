@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guriya Kumari | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --section-bg: #fff;
+      --header-bg: #333;
+      --link-color: #007BFF;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #1a1a1a;
+      --text-color: #e0e0e0;
+      --section-bg: #2a2a2a;
+      --header-bg: #000;
+      --link-color: #66b2ff;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav {
+      background-color: var(--header-bg);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .toggle-dark {
+      background: none;
+      border: 1px solid white;
+      color: white;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+    }
+
+    section {
+      background: var(--section-bg);
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 8px 0;
+    }
+    .project {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 15px 0;
+    }
+    .project img {
+      width: 120px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+    .project a {
+      font-weight: bold;
+      color: var(--link-color);
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--header-bg);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .project {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .project img {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="toggle-dark" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </nav>
+
+  <header>
+    <img src="gk image 2.jpg" alt="Guriya Kumari">
+    <h1>Guriya Kumari</h1>
+    <p>AI Enthusiast | Developer | Student at Rungta College of Engineering and Technology</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate 2nd-year engineering student focused on AI, Learning DSA in Java, and fronted developer. Skilled in c, Java, and HTML/CSS, with a strong interest in creating real-world projects.</p>
+  </section>
+
+  
+  <section id="education">
+    <h2>Education</h2>
+    <p>Currently pursuing B.Tech in IT(Information Technology)<br>Rungta College of Engineering and Technology (2nd Year)</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: C, Java</li>
+      <li>Web Development: HTML, CSS, JavaScript</li>
+      <li>Database: SQL</li>
+      <li>DSA, Communication, Aptitude</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="netflix image.png" alt="Netflix Clone">
+      <a href="#" target="_blank">netflix Clone</a>
+    </div>
+    <div class="project">
+      <img src="whattsap img.png" alt="WhatsApp Clone ">
+      <a href="#" target="_blank">WhatsApp Clone</a>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Licenses & Certifications</h2>  
+    <ul>
+      <li>
+        <strong>Introduction to Prompt Engineering for Generative AI</strong> - DeepLearning.AI<br>
+        <a href="https://www.linkedin.com/learning/certificates/610b4bf3b062474e37bd4129b50a4473c0a19df195aa2ef5477b9625a9197cbb?trk=share_certificate" target="_blank">View Certificate</a>
+      </li>
+      <li>
+      <strong>Git & GitHub Bootcamp</strong>
+      <a href="" target="_blank">View Certificate</a>
+    </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <ul>
+      <li>guriak9835@gmail.com</li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/guriya-kumari-29465528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/Guriya-kumari</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guriya Kumari. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Dark mode toggle
+    function toggleDarkMode() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
